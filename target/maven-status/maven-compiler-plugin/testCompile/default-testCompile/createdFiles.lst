@@ -1,1 +1,3 @@
 com\DeepakSalla\tests\ui\ExampleUiTest.class
+com\DeepakSalla\tests\db\ExampleDbTest.class
+com\DeepakSalla\tests\api\ExampleApiTest.class

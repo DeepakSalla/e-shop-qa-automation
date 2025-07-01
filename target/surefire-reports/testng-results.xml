@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-01T18:37:23 IST" name="Surefire suite" finished-at="2025-07-01T18:37:29 IST" duration-ms="5500">
+  <suite started-at="2025-07-01T19:43:17 IST" name="Surefire suite" finished-at="2025-07-01T19:43:22 IST" duration-ms="5814">
     <groups>
     </groups>
-    <test started-at="2025-07-01T18:37:23 IST" name="Surefire test" finished-at="2025-07-01T18:37:29 IST" duration-ms="5500">
+    <test started-at="2025-07-01T19:43:17 IST" name="Surefire test" finished-at="2025-07-01T19:43:22 IST" duration-ms="5814">
+      <class name="com.DeepakSalla.tests.api.ExampleApiTest">
+        <test-method signature="getPostById()[pri:0, instance:com.DeepakSalla.tests.api.ExampleApiTest@166fa74d]" started-at="2025-07-01T19:43:17 IST" name="getPostById" finished-at="2025-07-01T19:43:18 IST" duration-ms="1628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPostById -->
+      </class> <!-- com.DeepakSalla.tests.api.ExampleApiTest -->
       <class name="com.DeepakSalla.tests.ui.ExampleUiTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.DeepakSalla.tests.ui.ExampleUiTest@6cc7b4de]" started-at="2025-07-01T18:37:23 IST" name="setUp" finished-at="2025-07-01T18:37:28 IST" duration-ms="4315" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.DeepakSalla.tests.ui.ExampleUiTest@37574691]" started-at="2025-07-01T19:43:18 IST" name="setUp" finished-at="2025-07-01T19:43:21 IST" duration-ms="3021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openExampleDotCom()[pri:0, instance:com.DeepakSalla.tests.ui.ExampleUiTest@6cc7b4de]" started-at="2025-07-01T18:37:28 IST" name="openExampleDotCom" finished-at="2025-07-01T18:37:29 IST" duration-ms="901" status="PASS">
+        <test-method signature="openExampleDotCom()[pri:0, instance:com.DeepakSalla.tests.ui.ExampleUiTest@37574691]" started-at="2025-07-01T19:43:21 IST" name="openExampleDotCom" finished-at="2025-07-01T19:43:22 IST" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openExampleDotCom -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DeepakSalla.tests.ui.ExampleUiTest@6cc7b4de]" started-at="2025-07-01T18:37:29 IST" name="tearDown" finished-at="2025-07-01T18:37:29 IST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DeepakSalla.tests.ui.ExampleUiTest@37574691]" started-at="2025-07-01T19:43:22 IST" name="tearDown" finished-at="2025-07-01T19:43:22 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.DeepakSalla.tests.ui.ExampleUiTest -->
+      <class name="com.DeepakSalla.tests.db.ExampleDbTest">
+        <test-method is-config="true" signature="setUpDb()[pri:0, instance:com.DeepakSalla.tests.db.ExampleDbTest@6a79c292]" started-at="2025-07-01T19:43:18 IST" name="setUpDb" finished-at="2025-07-01T19:43:18 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDb -->
+        <test-method signature="verifyUserInDb()[pri:0, instance:com.DeepakSalla.tests.db.ExampleDbTest@6a79c292]" started-at="2025-07-01T19:43:18 IST" name="verifyUserInDb" finished-at="2025-07-01T19:43:18 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserInDb -->
+        <test-method is-config="true" signature="tearDownDb()[pri:0, instance:com.DeepakSalla.tests.db.ExampleDbTest@6a79c292]" started-at="2025-07-01T19:43:18 IST" name="tearDownDb" finished-at="2025-07-01T19:43:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDb -->
+      </class> <!-- com.DeepakSalla.tests.db.ExampleDbTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

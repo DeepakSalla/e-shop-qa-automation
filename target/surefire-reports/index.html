@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.DeepakSalla.tests.api.ExampleApiTest" class="method navigator-link" hash-for-method="getPostById">getPostById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.DeepakSalla.tests.ui.ExampleUiTest" class="method navigator-link" hash-for-method="openExampleDotCom">openExampleDotCom</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.DeepakSalla.tests.db.ExampleDbTest" class="method navigator-link" hash-for-method="verifyUserInDb">verifyUserInDb</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -118,6 +128,36 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DeepakSalla.tests.api.ExampleApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPostById">
+                  </a> <!-- getPostById -->
+                  <span class="method-name">getPostById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DeepakSalla.tests.db.ExampleDbTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserInDb">
+                  </a> <!-- verifyUserInDb -->
+                  <span class="method-name">verifyUserInDb</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -144,6 +184,8 @@
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.DeepakSalla.tests.api.ExampleApiTest&quot;/&gt;
+      &lt;class name=&quot;com.DeepakSalla.tests.db.ExampleDbTest&quot;/&gt;
       &lt;class name=&quot;com.DeepakSalla.tests.ui.ExampleUiTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
@@ -158,7 +200,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,16 +226,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openExampleDotCom')
-data.setCell(0, 2, 'com.DeepakSalla.tests.ui.ExampleUiTest')
-data.setCell(0, 3, 901);
+data.setCell(0, 1, 'getPostById')
+data.setCell(0, 2, 'com.DeepakSalla.tests.api.ExampleApiTest')
+data.setCell(0, 3, 1628);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'openExampleDotCom')
+data.setCell(1, 2, 'com.DeepakSalla.tests.ui.ExampleUiTest')
+data.setCell(1, 3, 898);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserInDb')
+data.setCell(2, 2, 'com.DeepakSalla.tests.db.ExampleDbTest')
+data.setCell(2, 3, 8);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 901 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -219,18 +269,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.DeepakSalla.tests.api.ExampleApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getPostById</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DeepakSalla.tests.db.ExampleDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpDb</span>
+                <span class="method-start">1630 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserInDb</span>
+                <span class="method-start">1752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownDb</span>
+                <span class="method-start">1760 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.DeepakSalla.tests.ui.ExampleUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1762 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">openExampleDotCom</span>
-                <span class="method-start">4329 ms</span>
+                <span class="method-start">4784 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5234 ms</span>
+                <span class="method-start">5682 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

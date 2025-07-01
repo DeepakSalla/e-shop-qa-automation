@@ -8,31 +8,55 @@
   <artifactId>e-shop-qa-automation</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>E-Shop QA Automation</name>
-  <description>End-to-end QA automation framework (UI, API, DB) using Selenium Manager</description>
+  <description>UI, API, and DB automation framework using Selenium Manager, REST-assured, and H2</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
-    <!-- upgraded versions -->
+    <!-- Core versions -->
     <selenium.version>4.11.0</selenium.version>
     <testng.version>7.8.0</testng.version>
+    <restassured.version>5.3.0</restassured.version>
+    <h2.version>2.1.214</h2.version>
   </properties>
 
   <dependencies>
-    <!-- Selenium with Selenium Manager built-in -->
+    <!-- Selenium (with Selenium Manager built-in) -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>${selenium.version}</version>
     </dependency>
 
-    <!-- TestNG as test runner -->
+    <!-- TestNG -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>${testng.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- REST-assured for API testing -->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>${restassured.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-path</artifactId>
+      <version>${restassured.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- H2 in-memory DB for DB testing -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>${h2.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
